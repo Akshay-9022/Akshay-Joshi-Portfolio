@@ -1,0 +1,445 @@
+/* =========================================================
+   AKSHAY JOSHI PORTFOLIO
+   PREMIUM ANIMATIONS
+========================================================= */
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(24px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+
+.reveal.visible {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   HERO PROFILE
+========================================================= */
+
+.profile-frame {
+    animation:
+        floatProfile 5s ease-in-out infinite;
+}
+
+
+@keyframes floatProfile {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-9px);
+    }
+
+}
+
+
+/* =========================================================
+   ORBITS
+========================================================= */
+
+.hero-orbit {
+    animation:
+        spinOrbit 18s linear infinite;
+}
+
+
+.orbit-b {
+    animation-direction:
+        reverse;
+
+    animation-duration:
+        23s;
+}
+
+
+@keyframes spinOrbit {
+
+    from {
+        transform:
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   BUTTON SHINE
+========================================================= */
+
+.btn-primary {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.btn-primary::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.18),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    transition:
+        left .6s ease;
+}
+
+
+.btn-primary:hover::before {
+    left: 135%;
+}
+
+
+/* =========================================================
+   SKILL FLOAT
+========================================================= */
+
+.skill-card:hover i {
+    animation:
+        skillPulse .55s ease;
+}
+
+
+@keyframes skillPulse {
+
+    0% {
+        transform:
+            scale(1);
+    }
+
+    50% {
+        transform:
+            scale(1.16);
+    }
+
+    100% {
+        transform:
+            scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   PROJECT HOVER
+========================================================= */
+
+.project-card {
+    will-change:
+        transform;
+}
+
+
+.project-card:hover .project-label {
+    letter-spacing:
+        .16em;
+}
+
+
+/* =========================================================
+   SOCIAL ICON
+========================================================= */
+
+.social-row a:hover i {
+    animation:
+        socialBounce .4s ease;
+}
+
+
+@keyframes socialBounce {
+
+    0% {
+        transform:
+            translateY(0);
+    }
+
+    45% {
+        transform:
+            translateY(-3px);
+    }
+
+    100% {
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   FLOATING INFO
+========================================================= */
+
+.floating-info {
+    animation:
+        floatingCard 4.5s ease-in-out infinite;
+}
+
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-6px);
+    }
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading .section-kicker {
+    animation:
+        kickerGlow 3s ease-in-out infinite;
+}
+
+
+@keyframes kickerGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 0
+            rgba(139,92,246,0);
+    }
+
+    50% {
+        text-shadow:
+            0 0 16px
+            rgba(139,92,246,.35);
+    }
+
+}
+
+
+/* =========================================================
+   EDUCATION / ACHIEVEMENT HOVER
+========================================================= */
+
+.education-card:hover .education-icon,
+.achievement-card:hover > i {
+    animation:
+        iconLift .45s ease;
+}
+
+
+@keyframes iconLift {
+
+    0% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-4px);
+    }
+
+    100% {
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline-dot {
+    animation:
+        timelinePulse 2.2s ease-in-out infinite;
+}
+
+
+@keyframes timelinePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 5px
+            rgba(139,92,246,.12),
+            0 0 0
+            rgba(139,92,246,0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 7px
+            rgba(139,92,246,.08),
+            0 0 18px
+            rgba(139,92,246,.32);
+    }
+
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top:hover i {
+    animation:
+        arrowUp .55s ease;
+}
+
+
+@keyframes arrowUp {
+
+    0% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-3px);
+    }
+
+    100% {
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.contact-form .btn-primary:hover i {
+    animation:
+        sendArrow .55s ease;
+}
+
+
+@keyframes sendArrow {
+
+    0% {
+        transform:
+            translateX(0);
+    }
+
+    50% {
+        transform:
+            translateX(4px);
+    }
+
+    100% {
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+/* =========================================================
+   LINK ARROW
+========================================================= */
+
+.text-link:hover i,
+.project-links a:hover i {
+    animation:
+        linkArrow .45s ease;
+}
+
+
+@keyframes linkArrow {
+
+    0% {
+        transform:
+            translate(0,0);
+    }
+
+    50% {
+        transform:
+            translate(2px,-2px);
+    }
+
+    100% {
+        transform:
+            translate(0,0);
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        scroll-behavior:
+            auto !important;
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+        animation-delay:
+            0ms !important;
+    }
+
+}
+
