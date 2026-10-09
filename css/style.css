@@ -3252,3 +3252,210 @@ button {
         font-size: 20px;
     }
 }
+/* =========================================================
+   CERTIFICATES SECTION
+========================================================= */
+
+.certificates-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 55px;
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    opacity: 0.75;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 span {
+    color: #7c3aed;
+}
+
+.section-heading p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.72;
+}
+
+.certificates-grid {
+    width: min(1100px, 92%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.certificate-card {
+    position: relative;
+    padding: 30px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.certificate-card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -45px;
+    right: -45px;
+    border-radius: 50%;
+    background: rgba(124, 58, 237, 0.13);
+    filter: blur(5px);
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(124, 58, 237, 0.45);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.20);
+}
+
+.certificate-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    background: rgba(124, 58, 237, 0.12);
+    color: #a78bfa;
+    font-size: 24px;
+}
+
+.certificate-platform {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 8px;
+}
+
+.certificate-content h3 {
+    font-size: 22px;
+    margin: 0 0 13px;
+    line-height: 1.35;
+}
+
+.certificate-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.72;
+    min-height: 72px;
+    margin-bottom: 20px;
+}
+
+.certificate-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 23px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.certificate-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.certificate-meta i {
+    width: 15px;
+    color: #a78bfa;
+}
+
+.certificate-btn {
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #7c3aed;
+    transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+    transform: translateY(-2px);
+    background: #6d28d9;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.28);
+}
+
+
+/* =========================================================
+   CERTIFICATE RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .certificates-section {
+        padding: 75px 0;
+    }
+
+    .section-heading {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 31px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .certificates-grid {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .certificate-card {
+        padding: 25px;
+    }
+
+    .certificate-content h3 {
+        font-size: 20px;
+    }
+}
